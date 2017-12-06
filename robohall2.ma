@@ -1,8 +1,8 @@
 //Maya ASCII 2017ff05 scene
 //Name: robohall2.ma
-//Last modified: Thu, Nov 02, 2017 05:14:55 PM
-//Codeset: 1252
-requires maya "2017ff05";
+//Last modified: Thu, Nov 02, 2017 08:36:32 PM
+//Codeset: UTF-8
+requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2017";
@@ -13,15 +13,15 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "20F77ABF-4FA4-BCD1-2977-268523B19DF5";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 21.284284640580228 9.5126473596231058 -8.0811828708274049 ;
-	setAttr ".r" -type "double3" 341.06164726139718 1196.2000000023725 359.99999999796904 ;
-	setAttr ".rp" -type "double3" -2.6645352591003757e-015 0 7.1054273576010019e-015 ;
-	setAttr ".rpt" -type "double3" 1.0055397343147636e-014 1.1529576775506221e-015 -5.8276588615487958e-015 ;
+	setAttr ".t" -type "double3" -5.1648678422365277 1.210645431271173 0.031323785704521434 ;
+	setAttr ".r" -type "double3" 363.26164726647033 264.60000000169657 359.99999999998943 ;
+	setAttr ".rp" -type "double3" -2.6645352591003757e-15 0 7.1054273576010019e-15 ;
+	setAttr ".rpt" -type "double3" 1.0055397343147636e-14 1.1529576775506221e-15 -5.8276588615487958e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5687AAB9-4EDC-ECC4-2C30-DA93EDB82905";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 9.2865893754915181;
+	setAttr ".coi" 5.7256989922813508;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
